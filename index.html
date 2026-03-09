@@ -174,28 +174,28 @@
                         
                         <!-- List Section (Right) -->
                         <div class="w-[65%] md:w-3/5 text-[10px] md:text-[11px] leading-relaxed text-gray-600 dark:text-gray-400 flex flex-col justify-center gap-1.5">
-                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#5b9bd5]"></span>Air</span>
-                                <b class="text-gray-800 dark:text-gray-200">435 MW</b>
-                            </div>
-                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#ed7d31]"></span>Panas Bumi</span>
-                                <b class="text-gray-800 dark:text-gray-200">87 MW</b>
-                            </div>
-                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#a5a5a5]"></span>Batubara</span>
-                                <b class="text-gray-800 dark:text-gray-200">542 MW</b>
-                            </div>
-                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#ffc000]"></span>Gas</span>
+							<div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#5b9bd5]"></span>Gas</span>
                                 <b class="text-gray-800 dark:text-gray-200">645 MW</b>
                             </div>
                             <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#c00000]"></span>BBM</span>
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#ed7d31]"></span>Batubara</span>
+                                <b class="text-gray-800 dark:text-gray-200">542 MW</b>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#a5a5a5]"></span>Air</span>
+                                <b class="text-gray-800 dark:text-gray-200">435 MW</b>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#ffc000]"></span>Panas Bumi</span>
+                                <b class="text-gray-800 dark:text-gray-200">87 MW</b>
+                            </div>
+                            <div class="flex justify-between border-b border-dashed border-gray-200 dark:border-slate-600 pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#70ad47]"></span>BBM</span>
                                 <b class="text-gray-800 dark:text-gray-200">33 MW</b>
                             </div>
                             <div class="flex justify-between pb-0.5 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors rounded px-1">
-                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#70ad47]"></span>Biogas</span>
+                                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-sm bg-[#c00000]"></span>Biogas</span>
                                 <b class="text-gray-800 dark:text-gray-200">8 MW</b>
                             </div>
                         </div>
@@ -611,9 +611,9 @@
         var mixChart = new Chart(document.getElementById('mixChart'), {
             type: 'doughnut',
             data: { 
-                labels: ['Air', 'Panas Bumi', 'Bara', 'Gas', 'Bio', 'BBM'], 
+                labels: ['Gas', 'Bara', 'Air', 'Panas Bumi', 'BBM', 'Bio'], 
                 datasets: [{ 
-                    data: [25, 31, 37, 5, 2, 1], 
+                    data: [37, 31, 25, 5, 2, 1], 
                     backgroundColor: ['#5b9bd5', '#ed7d31', '#a5a5a5', '#ffc000', '#70ad47', '#c00000'],
                     borderWidth: 0,
                     hoverOffset: 4
